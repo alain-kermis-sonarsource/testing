@@ -1,0 +1,6 @@
+projectKey=Alain-Testing
+serverUrl=http://localhost/sonarqube
+serverVersion=9.6-SNAPSHOT
+dashboardUrl=http://localhost/sonarqube/dashboard?id=Alain-Testing
+ceTaskId=AYKQ5v7ZNQLSl8eYyu6D
+ceTaskUrl=http://localhost/sonarqube/api/ce/task?id=AYKQ5v7ZNQLSl8eYyu6D

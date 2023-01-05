@@ -5,5 +5,7 @@ public class Main {
     System.out.println("Hello world!");
 
     String password = "abc";
+
+    String comment = "New user";
   }
 }

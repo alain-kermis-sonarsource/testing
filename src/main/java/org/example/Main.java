@@ -12,11 +12,18 @@ public class Main {
 
     try {
       Cipher des = Cipher.getInstance("DES"); // Noncompliant
+      Cipher des2 = Cipher.getInstance("DES"); // Noncompliant
+      Cipher des3 = Cipher.getInstance("DES"); // Noncompliant
+
 
       SecureRandom sr = new SecureRandom();
       sr.setSeed(123456L); // Noncompliant
+      sr.setSeed(123456L); // Noncompliant
+      sr.setSeed(123456L); // Noncompliant
+      sr.setSeed(123456L); // Noncompliant
       int v = Math.toIntExact(sr.nextLong());
 
+      sr = new SecureRandom("abcdefghijklmnop".getBytes("us-ascii")); // Noncompliant
       sr = new SecureRandom("abcdefghijklmnop".getBytes("us-ascii")); // Noncompliant
       v = Math.toIntExact(sr.nextLong());
 

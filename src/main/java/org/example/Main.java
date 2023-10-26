@@ -1,17 +1,12 @@
 package org.example;
 
-import java.security.NoSuchAlgorithmException;
-import javax.crypto.Cipher;
-import javax.crypto.NoSuchPaddingException;
+import java.util.logging.Logger;
 
 public class Main {
-  public static void main(String[] args) {
-    System.out.println("Hello world!");
+  private static final Logger logger = Logger.getLogger("Logger");
 
-    try {
-      Cipher des = Cipher.getInstance("DES"); // Noncompliant
-    } catch(NoSuchAlgorithmException | NoSuchPaddingException e) {
-      // ...
-    }
+  public static void main(String[] args) {
+    logger.info("Hello world!");
   }
+
 }

@@ -7,6 +7,7 @@ public class Main {
 
   public static void main(String[] args) {
     logger.info("Hello world!");
+    int x = 9;
   }
 
 }
